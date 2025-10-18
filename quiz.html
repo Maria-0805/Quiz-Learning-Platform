@@ -1,18 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Take the Quiz</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - Namibia Quiz Hub</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <main class="quiz-container">
-    <h2 id="question">Loading question...</h2>
-    <div id="options"></div>
-    <button id="nextBtn" class="btn" disabled>Next</button>
-  </main>
+  
+    <header class="site-header">
+        <div class="container">
+            <h1 class="logo">Namibia Quiz Hub</h1>
+            <nav class="main-nav">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="quiz.html">Quiz</a>
+                <a href="results.html">Results</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
 
-  <script src="script.js"></script>
+    <main class="quiz-section">
+        <div class="container">
+            <h2>Take the Quiz</h2>
+            <p>Answer the questions and see your results instantly!</p>
+
+            <div class="quiz-container">
+                <div id="question" class="quiz-question">Loading question...</div>
+                <div id="options" class="quiz-options"></div>
+                <button id="nextBtn" class="btn-hero">Next Question</button>
+                <p id="feedback" class="quiz-feedback"></p>
+            </div>
+        </div>
+    </main>
+  
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2025 Namibia Quiz Hub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
