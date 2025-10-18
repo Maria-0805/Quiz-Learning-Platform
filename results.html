@@ -15,7 +15,7 @@
   </main>
 
   <script>
-    const score = localStorage.getItem("quizScore");
+    const score = localStorage.getItem("quizScore") || 0;
     document.getElementById("scoreDisplay").textContent = 
       `You scored ${score} out of 10`;
   </script>
